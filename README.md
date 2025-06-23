@@ -9,11 +9,11 @@ If you run this app with -show argument it will just execute query and show resu
 
 Make sure to run it with admin rights. Маke sure to enable firewall logging in Windows Firewall settings.
 
+Above is the default behavior but you can change configuration to identify any desired set of requests from Firewall log
+or to modify Firewall rule that is being updated. See RequestFloodGuard.ini for configuration options.
+
 The free IP to City Lite database by DB-IP is licensed under a Creative Commons Attribution 4.0 International License:
 https://creativecommons.org/licenses/by/4.0/
 You can ocasionally re-download .mmdb GeoIP databases but keep same file names:
 https://db-ip.com/db/download/ip-to-city-lite
 https://db-ip.com/db/download/ip-to-asn-lite
-
-Above is the default behavior but you can change configuration to identify any desired set of requests from Firewall log
-or to modify Firewall rule that is being updated. See RequestFloodGuard.ini for configuration options.
