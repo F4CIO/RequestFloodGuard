@@ -1,5 +1,6 @@
-# RequestFloodGuard
+# RequestFloodGuard 1.0
 Detects brute-force RDC attacks in Firewall log and blocks found IP-s
+
 Video presentation: http://www.f4cio.com/RequestFloodGuard
 
 This app will load all firewall logs from specified folder and detect attackers by running the specified query on those logs. Default query detects frequent requests on RDC port. It will then update or, if not found, create a firewall rule to block those attackers. Finally if attackers were detected it will send an email with the list of attackers IPs (and their rough location) blacklisted/added to firewall rule.
