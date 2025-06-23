@@ -80,6 +80,7 @@ def main(log=None):
             results_with_geoip.append(row_with_geo_city_and_asn_data)
             log.add_line(f"{str(row_with_geo_city_and_asn_data)}\n")
 
+    log.add_line(f' *IP Geolocation by DB-IP (https://db-ip.com)')
     log.add_line('--------------------Finished cs_firewall_log_analyzer.')
     log.add_line(f"Results: {len(results_with_geoip)} rows.")
     if not __package__ and wait_for_any_key_to_exit:
