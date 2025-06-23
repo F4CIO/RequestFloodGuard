@@ -2,7 +2,7 @@
 Detects brute-force RDC attacks in Firewall log and blocks found IP-s<br>
 Video presentation: http://www.f4cio.com/RequestFloodGuard
 
-This app will load all firewall logs from specified folder and detect attackers by running the specified query on those logs. Default query detects frequent requests on RDC port. It will then update or, if not found, create a firewall rule to block those attackers. Finally if attackers were detected it will send an email with the list of attackers IPs (and their rough location) blacklisted/added to firewall rule.
+This python app will load all firewall logs from specified folder and detect attackers by running the specified query on those logs. Default query detects frequent requests on RDC port. It will then update or, if not found, create a firewall rule to block those attackers. Finally if attackers were detected it will send an email with the list of attackers IPs (and their rough location) blacklisted/added to firewall rule.
 
 Idea is to run this app either periodically or on every failed login attempt. If you run this app frequently (like every few seconds) app uses .state file to prevent running the app multiple times in parallel. If you run this app while it is already running, it will just schedule one more run and exit.
 
