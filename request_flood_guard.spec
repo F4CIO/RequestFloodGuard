@@ -1,12 +1,19 @@
 # -*- mode: python ; coding: utf-8 -*-
+from PyInstaller.utils.hooks import collect_data_files
+from PyInstaller.utils.hooks import collect_submodules
+
+datas = []
+hiddenimports = ['sqlite3']
+datas += collect_data_files('geoip2')
+hiddenimports += collect_submodules('geoip2')
 
 
 a = Analysis(
     ['src\\request_flood_guard.py'],
     pathex=[],
     binaries=[],
-    datas=[],
-    hiddenimports=['sqlite3', 'geoip2', 'geoip2.database'],
+    datas=datas,
+    hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
