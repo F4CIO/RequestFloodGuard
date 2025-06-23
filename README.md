@@ -15,5 +15,28 @@ or to modify Firewall rule that is being updated. See RequestFloodGuard.ini for 
 The free IP to City Lite database by DB-IP is licensed under a Creative Commons Attribution 4.0 International License:
 https://creativecommons.org/licenses/by/4.0/
 You can ocasionally re-download .mmdb GeoIP databases but keep same file names:
-https://db-ip.com/db/download/ip-to-city-lite
-https://db-ip.com/db/download/ip-to-asn-lite
+- https://db-ip.com/db/download/ip-to-city-lite
+- https://db-ip.com/db/download/ip-to-asn-lite
+
+## Installation
+If your favourite python dev invironment doesn't do this on startup you should manually install virtual environment and packages.
+
+On windows:
+<code>
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install sqlite3
+pip install geoip2
+pip install pyinstaller
+</code>
+
+On MacOS/Linux:
+<code>
+python3 -m venv .venv
+source .venv/bin/activate
+pip install sqlite3
+pip install geoip2
+pip install pyinstaller
+</code>
+
+Run build_exe.bat to publish to \dist.
