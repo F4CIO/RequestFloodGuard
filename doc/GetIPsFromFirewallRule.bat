@@ -1,0 +1,1 @@
+netsh advfirewall firewall show rule name=CraftSynth.RequestFloodGuard verbose

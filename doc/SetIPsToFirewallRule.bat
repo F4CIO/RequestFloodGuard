@@ -1,0 +1,1 @@
+netsh advfirewall firewall set rule name="CraftSynth.RequestFloodGuard" new remoteip=5.5.5.5/32,6.6.6.6-6.6.6.8,1.1.5.60-1.1.66.88,3.33.333.334-3.35.36.37,7.7.7.7
