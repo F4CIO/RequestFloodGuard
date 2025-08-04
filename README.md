@@ -41,3 +41,7 @@ pip install pyinstaller
 </code>
 
 Run build_exe.bat to publish to \dist.
+
+## Log screenshoot:
+
+![RequestFloodGuard](https://github.com/F4CIO/RequestFloodGuard/blob/main/RequestFloodGuard.png)
